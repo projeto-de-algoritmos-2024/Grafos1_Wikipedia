@@ -20,8 +20,8 @@ Temas:
 ## Alunos
 |Matrícula | Aluno |
 | -- | -- |
-| xx/xxxxxx  |  xxxx xxxx xxxxx |
-| xx/xxxxxx  |  xxxx xxxx xxxxx |
+| xx/xxxxxx  |  André Emanuel Bispo da Silva |
+| 221007869  |  Artur Henrique Holz Bartz |
 
 ## Sobre 
 Descreva os objetivos do seu projeto e como ele funciona. 
