@@ -111,7 +111,12 @@ def create_schema(conn: sqlite3.Connection,overwrite: bool = True) -> bool:
     logging.info(f"Creating schema {db_name}")
     if os.path.exists(db_name):
         if overwrite:
-            os.remove(db_name)
+            try:
+                os.rename(db_name, db_name + '_backup')
+                os.remove(db_name)
+            except PermissionError:
+                logging.warning(f"Não foi possível remover o arquivo {db_name} porque está em uso.")
+
         else:
             return False
     with open('create_schema.sql', 'r') as schema:
